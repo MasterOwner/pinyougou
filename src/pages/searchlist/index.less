@@ -1,0 +1,85 @@
+.search_input{
+    padding: 20rpx 16rpx;
+    background-color: #eee;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    input{
+        background-color: #fff;
+        height: 60rpx;
+        border-radius: 5px;
+    }
+    .search{
+        position: relative;
+        height: 0;
+        icon{
+            position: absolute;
+            left: 20rpx;
+            top: -40rpx;
+        }
+        .ssearch{
+            position: absolute;
+            left: 70rpx;
+            top: -50rpx;
+        }
+    }
+   
+}
+.tab{
+    display: flex;
+    height: 100rpx;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    left: 0;
+    top: 90rpx;
+    width: 100%;
+    background-color: #fff;
+    div{
+        width: 33%;
+        text-align: center;
+        line-height: 100rpx;
+    }
+    .active{
+        color: #f00;
+    }
+}
+.goodslist{
+    padding: 0 20rpx;
+    margin-top: 100rpx;
+    .box{
+        border-bottom: 1px solid #ccc;
+        height: 240rpx;
+        display: flex;
+        .left{
+            width: 200rpx;
+            margin-top: 20rpx;
+            img{
+                width: 200rpx;
+                height: 200rpx;
+            }
+        }
+        .right{
+            flex:1;
+            padding: 20rpx;
+            .title{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .price{
+                color: red;
+                margin-top: 50rpx;
+                span:first-child{
+                    font-size: 16px;
+                }
+                span:last-child{
+                    margin-left: 5rpx;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.main{
+    display: flex;
+    padding: 16rpx;
+    .left{
+        position: absolute;
+        top: 100rpx;
+        bottom: 0;
+        overflow: auto;
+        width: 200rpx;
+        text-align: center;
+        .item{
+            width: 200rpx;
+            line-height: 100rpx;
+            background-color: #eee;
+        }
+        .active{
+            background-color: #fff;
+            color: #f00;
+            position: relative;
+            &::before{
+                content: "";
+                width: 8rpx;
+                height: 60rpx;
+                background-color: #f00;
+                position: absolute;
+                left: 0;
+                top: 20rpx;
+            }
+        }
+    }
+    .right{
+        position: absolute;
+        top: 100rpx;
+        right: 0;
+        left: 216rpx;
+        bottom: 0;
+        overflow: auto;
+        flex:1;
+        padding: 0rpx 16rpx;
+        .pic{
+            width: 100%;
+            height: 180rpx;
+        }
+        .view{
+            text-align: center;
+            line-height: 100rpx;
+            span{
+                color:#ccc;
+            }
+        }
+        .boxx{
+            display: flex;
+            flex-wrap: wrap;
+            .box{
+                width: 33%;
+                height: 160rpx;
+                margin-bottom: 20rpx;
+                margin-right: 1rpx;
+                img{
+                    width: 90%;
+                    height: 80rpx;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

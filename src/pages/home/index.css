@@ -1,0 +1,37 @@
+#tabs {
+  padding: 0 16rpx;
+  padding-left: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+#tabs .box {
+  width: 25%;
+  margin-bottom: 30rpx;
+}
+#tabs .box img {
+  width: 128rpx;
+  height: 128rpx;
+}
+.floor {
+  padding: 0 16rpx;
+}
+.floor .title img {
+  height: 88rpx;
+}
+.floor .content {
+  display: flex;
+}
+.floor .content .left img {
+  width: 234rpx;
+  height: 390rpx;
+}
+.floor .content .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.floor .content .right img {
+  width: 232rpx;
+  height: 188rpx;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
